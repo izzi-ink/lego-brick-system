@@ -1,0 +1,208 @@
+# LEGO Brick System - .gitignore
+# This file tells Git which files and folders to ignore when committing code
+
+#######################
+# C# / .NET Backend
+#######################
+
+# Build results - these are created when you compile your C# code
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio files - these contain personal settings
+.vs/
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (these contain personal preferences)
+*.userprefs
+*.usertasks
+
+# Build Results of an ATL Project
+[Dd]ebugPS/
+[Rr]eleasePS/
+dlldata.c
+
+# Benchmark Results
+BenchmarkDotNet.Artifacts/
+
+# .NET Core - publish output
+[Pp]ublish/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# NuGet Packages - these will be downloaded automatically
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Entity Framework - database files (we'll recreate these)
+*.mdf
+*.ldf
+*.ndf
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# SQLite database files (your local database)
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+
+# Local database connection strings (contains passwords!)
+appsettings.Development.json
+appsettings.Local.json
+
+#######################
+# Vue.js Frontend
+#######################
+
+# Dependencies - these are downloaded with 'npm install'
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output - created when you run 'npm run build'
+dist/
+dist-ssr/
+*.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment variables (may contain secrets)
+.env
+.env.local
+.env.*.local
+
+# Vue.js specific
+.DS_Store
+Thumbs.db
+
+#######################
+# General Development
+#######################
+
+# Logs - these files get large and aren't needed in Git
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output/
+
+# Temporary folders
+tmp/
+temp/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.logs/)
+.cache/
+.parcel-cache/
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test/
+
+#######################
+# Operating System
+#######################
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+.Trash-*
+
+#######################
+# Project Specific
+#######################
+
+# Local configuration files (you might create these for testing)
+config.local.json
+settings.local.json
+
+# Documentation that gets auto-generated
+docs/api/
+
+# Test results
+TestResults/
+test-results.xml
+
+# Backup files
+*.bak
+*.backup
+
+#######################
+# Important Notes:
+#######################
+
+# ALWAYS COMMIT:
+# - Source code files (.cs, .vue, .js, .html, etc.)
+# - Project files (.csproj, package.json, etc.)
+# - Configuration templates (appsettings.json without secrets)
+# - README.md and documentation
+# - This .gitignore file itself!
+
+# NEVER COMMIT:
+# - Passwords or API keys
+# - Personal IDE settings
+# - Compiled/built files
+# - Dependencies (node_modules, bin, obj folders)
+# - Database files with real data
